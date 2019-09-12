@@ -17,11 +17,11 @@
 	</Appenders>
 	<loggers>
 		<!--日志器的定义 -->
-		<root level="DEBUG">
+		<root level="INFO">
 			<appender-ref ref="RollingFile" />
 			<appender-ref ref="StandOut"/>
 		</root>
-		<logger name="com.jlkj" level="DEBUG" additivity="false">
+		<logger name="com.jlkj" level="INFO" additivity="false">
 			<appender-ref ref="RollingFile" />
 			<appender-ref ref="StandOut"/>
 		</logger>

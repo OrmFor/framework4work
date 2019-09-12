@@ -1,11 +1,7 @@
 # Spring boot application
 server:
-  port: 9099
-spring:
-  data:
-    mongodb:
-      uri: mongodb://127.0.0.1:27017/test
+  port: 99
   datasource:
-    url: jdbc:mysql://localhost:3309/mingpian_test?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8
+    url: jdbc:mysql://localhost:3309/test?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8
     username: root
     password: password

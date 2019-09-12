@@ -6,7 +6,7 @@
 
     
     
-   <!-- &lt;!&ndash; spring配置文件中占位符的替换(例如：${xxx}) &ndash;&gt;
+  <!--  &lt;!&ndash; spring配置文件中占位符的替换(例如：${xxx}) &ndash;&gt;
 	<bean class="com.jlkj.web.common.config.impl.RedisConfigurer">
 		<property name="prefix" value="config" />
 		<property name="order" value="3"/>

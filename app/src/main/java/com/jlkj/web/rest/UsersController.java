@@ -17,8 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class UsersController extends BaseController {
 	private static final Logger LOGGER = LogManager.getLogger(UsersController.class);
-	/*@Autowired
-	private SessionUtil sessionUtil;*/
+
 	@Autowired
     private IUser userService;
 	
@@ -39,9 +38,9 @@ public class UsersController extends BaseController {
 		user.setUserCode("12317567");
 		user.setUserName("老吴1");
 		userService.insert(user);
-		if(true) {
+		/*if(true) {
 			throw new RuntimeException("ERROR");
-		}
+		}*/
 		return new ResultCode(StatusCode.SUCCESS);
 	}
 

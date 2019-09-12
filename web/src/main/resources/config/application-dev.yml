@@ -1,10 +1,7 @@
 # Spring boot application
 server:
-  port: 8080
-spring:
-  data:
-    mongodb:
-      uri: mongodb://127.0.0.1:27017/test
+  port: 88
+
   datasource:
     url: jdbc:mysql://localhost:3309/test?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8
     username: root

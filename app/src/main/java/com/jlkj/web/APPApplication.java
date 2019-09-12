@@ -10,12 +10,12 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @EnableAutoConfiguration
 @Configuration
 @ComponentScan(basePackages = {"com.jlkj.web"})
-@ImportResource(locations = {"classpath*:spring-common.xml"})
+@ImportResource(locations = { "classpath*:spring-config.xml", "classpath*:spring-common.xml"})
 @EnableTransactionManagement
-public class Application {
+public class APPApplication {
 
 	public static void main(String[] args) throws Exception {
-		SpringApplication.run(Application.class, args);
+		SpringApplication.run(APPApplication.class, args);
 	}
 
 /*	@Configuration
