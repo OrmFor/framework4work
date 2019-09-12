@@ -63,7 +63,7 @@
 	</bean>
 	<!-- Mapper接口类 -->
 	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-		<property name="basePackage" value="com.jlkj.web.dao" />
+		<property name="basePackage" value="com.jlkj.web.shopnew.dao" />
 		<property name="sqlSessionFactoryBeanName" value="sqlSessionFactory" />
 	</bean>
 

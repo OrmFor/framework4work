@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.jlkj.web.shopnew.dao.LogMapper" >
+  <resultMap id="associationMap" type="com.jlkj.web.shopnew.pojo.Log" >
+    
+  </resultMap>
+  <sql id="map_params_where_condition_ext" >
+	<if test="extConditions != null">
+		<!-- 扩展条件 -->
+	</if>
+  </sql>
+
+    <resultMap id="getInsertMongoDbAllResult" type="com.jlkj.web.shopnew.dto.LogDto">
+        <result column="uid" property="uid" />
+        <result column="operation_id" property="operationId" />
+        <result column="type" property="logType" />
+        <result column="num" property="num" />
+        <result column="create_time" property="createTime" />
+        <result column="goodsName" property="goodsName" />
+        <result column="operationName" property="operationName" />
+        <result column="username" property="username" />
+    </resultMap>
+
+    <select id="getInsertMongoDbAll" resultMap="getInsertMongoDbAllResult">
+    select count(1) as num,
+a.uid,b.username,a.operation_id,c.username as operationName,a.type,a.goodsName,a.create_time,a.update_time
+from log a
+LEFT JOIN `user` b ON b.id = a.uid
+LEFT JOIN `user` c on c.id = a.operation_id
+group by a.uid,a.operation_id,a.type,a.goodsName;
+
+  </select>
+</mapper>
