@@ -1,0 +1,9 @@
+com\test\chat\User$UserBuilder.class
+com\test\chat\Message$MessageBuilder.class
+com\test\chat\User.class
+com\test\chat\UserData.class
+com\test\chat\MessageDAO.class
+com\test\ImApplication.class
+com\test\request\TestRequestController.class
+com\test\chat\Message.class
+com\test\chat\MessageDAOImpl.class

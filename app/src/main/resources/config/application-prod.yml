@@ -1,0 +1,7 @@
+# Spring boot application
+server:
+  port: 99
+  datasource:
+    url: jdbc:mysql://localhost:3309/test?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8
+    username: root
+    password: password
