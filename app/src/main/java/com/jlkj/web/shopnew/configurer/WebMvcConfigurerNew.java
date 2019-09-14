@@ -30,8 +30,11 @@
 //	}
 //
 //	public void addInterceptors(InterceptorRegistry registry) {
-//		registry.addInterceptor(securityInterceptor()).addPathPatterns("/payapi/3.0/**").excludePathPatterns("/payapi/3.0/extend/notify")
-//				.excludePathPatterns("/payapi/3.0/prepay/notify").excludePathPatterns("/payapi/3.0/bankrepay/notify");
+//		registry.addInterceptor(securityInterceptor())
+//                .addPathPatterns("/payapi/3.0/**")
+//                .excludePathPatterns("/payapi/3.0/extend/notify")
+//				.excludePathPatterns("/payapi/3.0/prepay/notify")
+//                .excludePathPatterns("/payapi/3.0/bankrepay/notify");
 //	}
 //
 ///*    @Override

@@ -10,6 +10,8 @@ import org.springframework.http.converter.HttpMessageConverter;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
+import java.nio.charset.Charset;
+
 
 @Configuration
 public class WebMvcConfigurerNew implements WebMvcConfigurer {
@@ -47,6 +49,7 @@ public class WebMvcConfigurerNew implements WebMvcConfigurer {
         fastJsonConfig.setSerializerFeatures(SerializerFeature.PrettyFormat);
         // 3.在converter中添加配置信息
         fastConverter.setFastJsonConfig(fastJsonConfig);
+        fastConverter.setDefaultCharset(Charset.defaultCharset());
         // 4.将converter赋值给HttpMessageConverter
         HttpMessageConverter<?> converter = fastConverter;
         // 5.返回HttpMessageConverters对象

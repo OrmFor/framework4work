@@ -3,7 +3,7 @@
 	<Appenders>
 		<RollingFile name="RollingFile" fileName="logs/web.log"
 			filePattern="logs/$${date:yyyy-MM}/apppay-%d{yyyy-MM-dd}-%i.log.gz">
-			<PatternLayout>
+			<PatternLayout charset="UTF-8">
 				<Pattern>%d %p %c{1.} [%t] %m%n</Pattern>
 			</PatternLayout>
 			<Policies>

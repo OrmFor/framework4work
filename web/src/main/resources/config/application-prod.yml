@@ -5,3 +5,8 @@ server:
     url: jdbc:mysql://localhost:3309/test?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8
     username: root
     password: password
+  http:
+    encoding:
+      charset: UTF-8
+      force: true
+      enabled: true
